@@ -2,6 +2,8 @@ from nba_api.stats.endpoints import leaguedashplayerstats
 import pandas as pd
 import time
 
+"query pull for players database"
+
 num = 9
 years = ['2011-12','2012-13','2013-14','2014-15','2015-16','2016-17','2018-19','2019-20','2021-22','2022-23',]
 
