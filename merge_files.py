@@ -3,7 +3,7 @@ import glob
 import os
 
 # Path to folder containing your CSVs
-folder_path = './nba_seasons'
+folder_path = './nba_games'
 output_file = 'nba_merged.csv'
 
 # Get list of CSV files
