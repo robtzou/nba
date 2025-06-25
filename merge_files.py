@@ -3,10 +3,10 @@ import glob
 import os
 
 # Path to folder containing your CSVs
-folder_path = './nba_games'
+folder_path = './nba_data'
 output_file = 'nba_merged.csv'
 
-# Get list of CSV files
+# Get list of CSV filesggVG
 csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
 
 all_data = []
