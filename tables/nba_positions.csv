@@ -1,0 +1,8 @@
+POSITION,POSITION_ID
+Guard,1
+Forward,2
+Guard-Forward,3
+Center-Forward,4
+Center,5
+Forward-Center,6
+Forward-Guard,7
