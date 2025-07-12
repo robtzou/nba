@@ -1,0 +1,81 @@
+player_id,player_name,team,season,stat_category,value
+1629029,Luka Dončić,DAL,2023-24,Points Per Game,2370.0
+1628983,Shai Gilgeous-Alexander,OKC,2023-24,Points Per Game,2254.0
+203507,Giannis Antetokounmpo,MIL,2023-24,Points Per Game,2222.0
+1628973,Jalen Brunson,NYK,2023-24,Points Per Game,2212.0
+203999,Nikola Jokić,DEN,2023-24,Points Per Game,2085.0
+1630162,Anthony Edwards,MIN,2023-24,Points Per Game,2049.0
+201142,Kevin Durant,PHX,2023-24,Points Per Game,2032.0
+1628369,Jayson Tatum,BOS,2023-24,Points Per Game,1987.0
+1628368,De'Aaron Fox,SAC,2023-24,Points Per Game,1966.0
+201939,Stephen Curry,GSW,2023-24,Points Per Game,1956.0
+1630169,Tyrese Haliburton,IND,2023-24,Assists Per Game,752.0
+203999,Nikola Jokić,DEN,2023-24,Assists Per Game,708.0
+1629029,Luka Dončić,DAL,2023-24,Assists Per Game,686.0
+1627734,Domantas Sabonis,SAC,2023-24,Assists Per Game,673.0
+201935,James Harden,LAC,2023-24,Assists Per Game,614.0
+1627832,Fred VanVleet,HOU,2023-24,Assists Per Game,589.0
+2544,LeBron James,LAL,2023-24,Assists Per Game,589.0
+1629027,Trae Young,ATL,2023-24,Assists Per Game,583.0
+1628973,Jalen Brunson,NYK,2023-24,Assists Per Game,519.0
+203081,Damian Lillard,MIL,2023-24,Assists Per Game,508.0
+1627734,Domantas Sabonis,SAC,2023-24,Rebounds Per Game,1120.0
+203497,Rudy Gobert,MIN,2023-24,Rebounds Per Game,982.0
+203999,Nikola Jokić,DEN,2023-24,Rebounds Per Game,976.0
+203076,Anthony Davis,LAL,2023-24,Rebounds Per Game,961.0
+203507,Giannis Antetokounmpo,MIL,2023-24,Rebounds Per Game,841.0
+203994,Jusuf Nurkić,PHX,2023-24,Rebounds Per Game,837.0
+1628386,Jarrett Allen,CLE,2023-24,Rebounds Per Game,811.0
+202696,Nikola Vučević,CHI,2023-24,Rebounds Per Game,801.0
+203991,Clint Capela,ATL,2023-24,Rebounds Per Game,776.0
+1641705,Victor Wembanyama,SAS,2023-24,Rebounds Per Game,755.0
+1628368,De'Aaron Fox,SAC,2023-24,Steals Per Game,150.0
+1628983,Shai Gilgeous-Alexander,OKC,2023-24,Steals Per Game,150.0
+1627936,Alex Caruso,CHI,2023-24,Steals Per Game,120.0
+1629680,Matisse Thybulle,POR,2023-24,Steals Per Game,113.0
+202331,Paul George,LAC,2023-24,Steals Per Game,113.0
+1627749,Dejounte Murray,ATL,2023-24,Steals Per Game,111.0
+202695,Kawhi Leonard,LAC,2023-24,Steals Per Game,111.0
+203999,Nikola Jokić,DEN,2023-24,Steals Per Game,108.0
+1628978,Donte DiVincenzo,NYK,2023-24,Steals Per Game,107.0
+1630591,Jalen Suggs,ORL,2023-24,Steals Per Game,106.0
+1641705,Victor Wembanyama,SAS,2023-24,Blocks Per Game,254.0
+1631096,Chet Holmgren,OKC,2023-24,Blocks Per Game,190.0
+201572,Brook Lopez,MIL,2023-24,Blocks Per Game,189.0
+203076,Anthony Davis,LAL,2023-24,Blocks Per Game,178.0
+203497,Rudy Gobert,MIN,2023-24,Blocks Per Game,162.0
+1631117,Walker Kessler,UTA,2023-24,Blocks Per Game,154.0
+1629655,Daniel Gafford,DAL,2023-24,Blocks Per Game,153.0
+1629651,Nic Claxton,BKN,2023-24,Blocks Per Game,146.0
+1626167,Myles Turner,IND,2023-24,Blocks Per Game,144.0
+204001,Kristaps Porziņģis,BOS,2023-24,Blocks Per Game,111.0
+1629655,Daniel Gafford,DAL,2023-24,Field Goal %,0.725
+203497,Rudy Gobert,MIN,2023-24,Field Goal %,0.661
+1627826,Ivica Zubac,LAC,2023-24,Field Goal %,0.649
+1628386,Jarrett Allen,CLE,2023-24,Field Goal %,0.634
+1629651,Nic Claxton,BKN,2023-24,Field Goal %,0.629
+1631105,Jalen Duren,DET,2023-24,Field Goal %,0.619
+203507,Giannis Antetokounmpo,MIL,2023-24,Field Goal %,0.611
+1629021,Moritz Wagner,ORL,2023-24,Field Goal %,0.601
+1627734,Domantas Sabonis,SAC,2023-24,Field Goal %,0.594
+203999,Nikola Jokić,DEN,2023-24,Field Goal %,0.583
+1628960,Grayson Allen,PHX,2023-24,3-Point %,0.461
+1628379,Luke Kennard,MEM,2023-24,3-Point %,0.45
+201144,Mike Conley,MIN,2023-24,3-Point %,0.442
+1629726,Garrison Mathews,ATL,2023-24,3-Point %,0.44
+1626181,Norman Powell,LAC,2023-24,3-Point %,0.435
+203078,Bradley Beal,PHX,2023-24,3-Point %,0.43
+203468,CJ McCollum,NOP,2023-24,3-Point %,0.429
+201950,Jrue Holiday,BOS,2023-24,3-Point %,0.429
+1631114,Jalen Williams,OKC,2023-24,3-Point %,0.427
+1627750,Jamal Murray,DEN,2023-24,3-Point %,0.425
+202691,Klay Thompson,GSW,2023-24,Free Throw %,0.927
+201939,Stephen Curry,GSW,2023-24,Free Throw %,0.923
+203992,Bogdan Bogdanović,ATL,2023-24,Free Throw %,0.921
+203081,Damian Lillard,MIL,2023-24,Free Throw %,0.92
+1629014,Anfernee Simons,POR,2023-24,Free Throw %,0.916
+202331,Paul George,LAC,2023-24,Free Throw %,0.907
+202681,Kyrie Irving,DAL,2023-24,Free Throw %,0.905
+1628401,Derrick White,BOS,2023-24,Free Throw %,0.901
+1628374,Lauri Markkanen,UTA,2023-24,Free Throw %,0.899
+1626164,Devin Booker,PHX,2023-24,Free Throw %,0.886

@@ -1,61 +1,42 @@
-from nba_api.stats.endpoints import CommonAllPlayers, CommonPlayerInfo
+from nba_api.stats.endpoints import commonallplayers, commonplayerinfo
 import pandas as pd
 import time
 
-# Step 1: Get all active players in the 2023-24 season
-common_all = CommonAllPlayers(is_only_current_season=1, league_id='00', season='2023-24')
-df_players = common_all.get_data_frames()[0]
-
-# Step 2: For each player, fetch their college via CommonPlayerInfo
-player_college = []
-
-for idx, row in df_players.iterrows():
-    pid = row['PERSON_ID']
-    name = row['DISPLAY_FIRST_LAST']
+# Step 1: Get all players for 2023–24
+players_response = commonallplayers.CommonAllPlayers(
+    season='2023-24',
+    league_id='00',
     
+)
+df_all = players_response.get_data_frames()[0]
+
+# Step 2: Filter to active players only
+active_players = df_all[df_all['ROSTERSTATUS'] == 1]
+
+# Step 3: Loop through and get college info using CommonPlayerInfo
+player_list = []
+for idx, row in active_players.iterrows():
+    player_id = row['PERSON_ID']
+    name = row['DISPLAY_FIRST_LAST']
+
     try:
-        info = CommonPlayerInfo(player_id=pid).get_data_frames()[0]
-        college = info.loc[0, 'SCHOOL']
+        info = commonplayerinfo.CommonPlayerInfo(player_id=player_id)
+        player_data = info.get_data_frames()[0]
+        college = player_data.at[0, 'SCHOOL']
     except Exception as e:
-        college = 'Unavailable'
-        print(f"Error fetching info for {name} (ID: {pid}): {e}")
-    
-    player_college.append({
-        'Player ID': pid,
-        'Player Name': name,
-        'College': college
+        print(f"Error fetching data for {name} ({player_id}): {e}")
+        college = None
+
+    player_list.append({
+        'Player_ID': player_id,
+        'Name': name,
+        'School': college
     })
-    
-    time.sleep(0.6)  # Respect rate limits
 
-# Step 3: Convert to DataFrame
-df_colleges = pd.DataFrame(player_college)
+    print(f"✔️ {name} | {college}")
+    time.sleep(0.6)  # Delay to avoid rate-limiting
 
-# Step 4: Dump to CSV
-csv_file = 'nba_players_colleges_2023_24.csv'
-df_colleges.to_csv(csv_file, index=False)
-
-print(f"\nData dumped successfully to {csv_file}")
-from nba_api.stats.endpoints import CommonAllPlayers, CommonPlayerInfo
-import pandas as pd
-import time
-
-# Step 1: Get all active players in 2023-24
-common_all = CommonAllPlayers(is_only_current_season=1, league_id='00', season='2023-24')
-df_players = common_all.get_data_frames()[0]  # Contains PLAYER_ID and DISPLAY_FIRST_LAST
-
-# Step 2: For each player, fetch their college via CommonPlayerInfo
-player_college = []
-
-for idx, row in df_players.iterrows():
-    pid = row['PERSON_ID']
-    name = row['DISPLAY_FIRST_LAST']
-    info = CommonPlayerInfo(player_id=pid).get_data_frames()[0]
-    college = info.loc[0, 'SCHOOL']  # College field
-    player_college.append({'player_id': pid, 'player_name': name, 'college': college})
-    time.sleep(0.6)  # be a good citizen and respect rate limits
-
-# Step 3: Convert to DataFrame
-df_colleges = pd.DataFrame(player_college)
-
-print(df_colleges.head())
+# Step 4: Save or use
+df_final = pd.DataFrame(player_list)
+df_final.to_csv("nba_2023_24_player_colleges.csv", index=False)
+print(df_final.head())
